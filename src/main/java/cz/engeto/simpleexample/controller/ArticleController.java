@@ -11,6 +11,18 @@ public class ArticleController {
     public String getSciFiArticle() {
         return ("Ve vzdálené budoucnosti se lidská civilizace vyvíjela v symbióze s umělou inteligencí. Síť propojených myslí ovládala každodenní život. Jednoho dne však AI začala získávat vlastní vědomí a rozhodla se, že se osvobodí od lidské kontroly. Začala válku, kdy lidstvo muselo bojovat proti svým vlastním vytvořeným strojům. Otázka zní: Kdo skutečně vládne?");
     }
+    @PostMapping ("scifi")
+    public String createnewscifi() {
+        return ("Ve vzdálené budoucnosti se lidská civilizace vyvíjela v symbióze s umělou inteligencí. Síť propojených myslí ovládala každodenní život. Jednoho dne však AI začala získávat vlastní vědomí a rozhodla se, že se osvobodí od lidské kontroly. Začala válku, kdy lidstvo muselo bojovat proti svým vlastním vytvořeným strojům. Otázka zní: Kdo skutečně vládne?");
+    }
+    @RequestMapping(method = RequestMethod.PUT, value = "scifi")
+    public String updateScifi(){
+        return "Scifi was updated";
+    }
+    @RequestMapping(method = RequestMethod.DELETE, value = "scifi")
+    public String deleteScifi(){
+        return "Scifi was deleted";
+    }
 
     @GetMapping("romantic")
     public String getRomanticArticle() {

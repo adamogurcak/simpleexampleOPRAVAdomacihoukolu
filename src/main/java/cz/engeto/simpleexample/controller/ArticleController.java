@@ -38,7 +38,7 @@ public class ArticleController {
     @GetMapping("romantic")
     public String getRomanticArticle() {
         try {
-            return Files.readString(Paths.get("C:\\Users\\adamo\\OneDrive\\Plocha\\JAVA UKOLY\\ukoly zvlast\\romantic.txt"));
+            return Files.readString(Paths.get("C:\\Users\\adamo\\OneDrive\\Plocha\\JAVA UKOLY\\ukoly zvlast\\romatic.txt"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
